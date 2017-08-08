@@ -1,0 +1,19 @@
+{
+  "env": {
+    "jasmine": true,
+    "node": true,
+    "browser": true,
+    "builtin": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": 0,
+    "semi": 1,
+    "prefer-const": 2
+  },
+  "extends": ["eslint:recommended"]
+}
+

@@ -1,0 +1,13 @@
+{
+  "compact": true,
+  "presets": [
+    ["env", {
+    "targets": {
+      "browsers": ["last 2 versions", "> 5%", "iOS >= 9", "IE 11"]
+    },
+    "useBuiltIns": true
+    }]
+  ]
+}
+
+//es 6 to 5

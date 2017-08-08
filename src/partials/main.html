@@ -1,0 +1,14 @@
+<md-card class="calculator">
+  <md-card-header flex="none" layout='column' layout-margin layout-align="space-between end" >
+    <md-card-header-text class='md-display-1'>
+      {{mainCalc.calculateValues.displayValue}}<span ng-if="!(mainCalc.calculateValues.chain)">0</span>
+    </md-card-header-text>
+    <md-card-header-text class='md-subhead'>
+      {{mainCalc.calculateValues.chain}}<span ng-if="!(mainCalc.calculateValues.chain)">0</span>
+    </md-card-header-text>
+  </md-card-header>
+
+  <div ng-repeat="rows in mainCalc.calcButtons" layout='row' layout-align="start start">
+    <md-button ng-repeat="button in rows.row" ng-click=button.func(button.content) class={{button.buttonClass}}>{{button.content}}</md-button>
+  </div>
+</md-card>
